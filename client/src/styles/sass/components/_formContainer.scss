@@ -1,0 +1,15 @@
+.form-container {
+	position: relative;
+	border: 0.0625rem solid $form-background;
+	background-color: $form-background;
+	border-radius: 0.625rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: 18.75rem;
+	width: 100%;
+	max-width: 22.5rem;
+	padding: 1rem;
+	margin: 0 auto;
+}

@@ -1,0 +1,97 @@
+.form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	padding: 0.5rem;
+	margin: 0 auto;
+
+	&-title {
+		width: 100%;
+		max-width: 100%;
+		padding: 0.25rem 0;
+		font-weight: $cabin-bold;
+		color: $midnightblue;
+	}
+
+	&-body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		padding: 0.25rem 0;
+		margin: 0 auto;
+	}
+
+	&-controls {
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		padding: 0.25rem 0;
+		margin: 0 auto;
+	}
+
+	&-label {
+		width: 100%;
+		max-width: 100%;
+		font-size: $font-size-md;
+		font-weight: $cabin-medium;
+		color: $midnightblue;
+		padding: 0.25rem 0;
+		margin: 0 auto;
+	}
+
+	&-input {
+		border: 0.0625rem solid $slategray;
+		width: 100%;
+		padding: 0.5rem 2rem;
+		margin: 0 auto;
+		border-radius: 0.625rem;
+		&:hover,
+		&:focus,
+		&:active {
+			border: 0.0625rem solid $dodgerblue;
+		}
+		&-row {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&-submit {
+		&-row {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			max-width: 100%;
+			padding: 0.25rem 0;
+			margin: 0 auto;
+		}
+	}
+}
+
+.btn-submit {
+	border: 0.0625rem solid $submit-btn-bg-colour;
+	background-color: $submit-btn-bg-colour;
+	border-radius: 0.625rem;
+	width: 100%;
+	padding: 0.5rem 2rem;
+	margin: 0 auto;
+	font-size: $font-size-base + 0.125rem;
+	color: $white;
+}
+
+.forgot-password-link {
+	font-size: $font-size-md;
+	font-weight: $cabin-medium;
+	color: $link-btn-text-colour;
+	padding: 0.125rem 0;
+	margin-left: auto;
+}
