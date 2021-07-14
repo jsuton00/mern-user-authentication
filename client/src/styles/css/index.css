@@ -209,12 +209,40 @@ button:hover, button:focus, button:active {
   color: #ffffff;
 }
 
+.forgot-password-row {
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  height: 100%;
+  padding: 0.125rem 0;
+  margin: 0 auto;
+}
 .forgot-password-link {
+  flex-basis: 40%;
   font-size: 0.875rem;
   font-weight: 500;
   color: #0069ff;
-  padding: 0.125rem 0;
+  padding: 0.125rem 0.25rem;
+  text-align: right;
   margin-left: auto;
+}
+.forgot-password .invalid-feedback {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  font-weight: 500;
+}
+
+.has-error {
+  border-color: #ca0c0c;
+}
+
+.invalid-feedback {
+  display: block;
+  width: auto;
+  font-weight: 500;
+  text-align: left;
+  margin-right: auto;
 }
 
 .login-page,

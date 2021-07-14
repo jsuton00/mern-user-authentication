@@ -33,7 +33,7 @@ const login = async (req, res, next) => {
 			return next(new ErrorResponse('Invalid credentials', 401));
 		}
 
-		const isMatch = await User.matchPasswords(password);
+		const isMatch = await user.matchPasswords(password);
 
 		if (!isMatch) {
 			return next(new ErrorResponse('Invalid credentials', 401));

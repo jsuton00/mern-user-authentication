@@ -25,6 +25,8 @@ const protect = async (req, res, next) => {
 		const decoded = jwt.verify(token, JWT_SECRET);
 		const user = await User.findById(decoded.id);
 
+		console.log(user);
+
 		if (!user) {
 			return next(new ErrorResponse('No user found with this id', 404));
 		}
